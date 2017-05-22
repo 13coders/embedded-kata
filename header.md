@@ -1,3 +1,7 @@
+---
+layout: simple
+---
+
 # Embedded Systems Kata
 
 The "washing machine" code kata for embedded systems developers.
