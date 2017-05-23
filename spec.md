@@ -11,6 +11,20 @@ title: The Kata
 
 ## Selecting a wash program
 
+A straightforward function - the operator can press the up and down
+buttons to cycle between selected programs. The current program is
+always shown on the left-hand two digits as "Px". The "P" never
+changes.
+
+- The available programs are clamped to the range 1-3. Pressing UP
+  when the display shows P3 has no effect. Pressing the DOWN button
+  when the program is on P1 has no effect.
+
+- On startup, the currently selected program is P1.
+
+- They're cheap momentary switches, so button bounce is
+  inevitable. How will you debounce? And when will you do this?
+
 ## Running the wash program
 
 ### Timer countdown and ticker
