@@ -12,13 +12,12 @@ washing machine.
 
 There's a high-level flow involved in operating the washing machine
 that's independent of the wash program that's selected. This is shown
-below as a state diagram.
-
-Tip: treat this as a requirement rather than implementation design.
+below as a state diagram (tip: treat this as a requirement rather than
+implementation design).
 
 ![High level operation](operation.svg)
 
-Narrative:
+Some additional narrative:
 
 - The physical door switch has to be taken as an absolute. So, for
   example, if the switch is found to be open when the "Unloading"
@@ -29,6 +28,9 @@ Narrative:
   initialised or uninitialised. The spec is agnostic about
   implementation : this could mean that the event is simply ignored in
   this state.
+
+- A lot of the complexity in requirements - and hardware interaction -
+  is in the "running" state.
 
 ## Handling the door
 
