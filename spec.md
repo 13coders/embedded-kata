@@ -3,4 +3,5 @@ layout: default
 title: The Kata
 ---
 
-## The kata challenge
+## The Kata
+
