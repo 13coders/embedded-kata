@@ -47,7 +47,9 @@ They use low-cost development boards, like the STM32 Discovery.
 These are fine. They give you access to an MCU part, for about 10
 bucks apiece, and they're great tools to have.
 
-But they don't do anything.
+*But they don't do anything**. If you want to integrate hardware, you
+have to wire up. So, time spent on DIY hardware (often fragile) rather
+than code.
 
 Further up the scale we have more complete evaluation boards. Picking
 the STM32 platform again, you can buy a ST-EVAL board. These are much
@@ -55,7 +57,7 @@ more expensive, typically around 200 euro for a well provisioned
 board.  What you get for your money is an MCU part, but this time on a
 board that's richly provisioned with integrated hardware.
 
-But there's no functional purpose to these.
+**But there's no functional purpose to this.**
 
 TODO : design and scale
 
