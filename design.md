@@ -2,9 +2,10 @@
 layout: default
 title: Design Goals
 ---
-# Design goals
 
-## Technical Characteristics
+## Design goals
+
+### Technical Characteristics
 
 We wanted to have a design which included a broad range of typical
 hardware and firmware scenarios. After all, if the point is to bridge
@@ -90,7 +91,7 @@ Here's what we decided on for a realistic design challenge:
   an embedded context. Coding for a real hardware target forces us to
   address those tradeoffs in our design.
 
-## Secondary Goals
+### Secondary Goals
 
 There were some other goals that contribute to the success of the
 design:

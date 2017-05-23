@@ -1,12 +1,10 @@
-# Background
+## Background
 
 We tend to learn and to first experience TDD on code other than our
 _day job_ codebase...
 
 - ...we see a co-worker demo TDD on typical code katas...
-
 - ...we attend coderetreats...
-
 - ...we watch video screencasts...
 
 Over time, a pattern becomes apparent : that people are often
@@ -41,7 +39,7 @@ practicing TDD and clean code. This isn't intended as a substitute -
 it's intended as confidence-building __evidence__ that TDD can work on
 non-trivial embedded designs.
 
-# Evaluation boards just don't cut it
+## Evaluation boards just don't cut it
 
 So what do embedded devs normally do when they want to experiment?
 They use low-cost development boards, like the STM32 Discovery.
@@ -61,7 +59,7 @@ But there's no functional purpose to these.
 
 TODO : design and scale
 
-# Stable Hardware and Functional Scope
+## Stable Hardware and Functional Scope
 
 The advantage of this design over a more open-ended development board
 is that the hardware scope is fixed, and the objective is fixed on a
@@ -71,6 +69,6 @@ General-purpose development boards are indispensable, but
 experimentation tends to become a series of small isolated spikes of
 specific features rather than an attempt at a more joined-up problem.
 
-# Interesting ?
+## Interesting ?
 
 Read more about the [design goals for the kata](Kata-Design-Goals).
