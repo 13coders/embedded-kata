@@ -9,6 +9,13 @@ title: The Kata
 
 ## Handling the door
 
+The door is simulated by a slide switch. In the upper position, the
+door is open, in the lower position it's closed.
+
+When the program is being selected by the operator, the "Open"
+indicator has to be updated promptly to show the current state of the
+door switch.
+
 ## Selecting a wash program
 
 A straightforward function - the operator can press the up and down
@@ -22,10 +29,26 @@ changes.
 
 - On startup, the currently selected program is P1.
 
-- They're cheap momentary switches, so button bounce is
+- They're cheap momentary switches, so some degree of button bounce is
   inevitable. How will you debounce? And when will you do this?
 
 ## Running the wash program
+
+The wash program is initiated by pressing "START". If the door switch
+is currrently open, this has no effect. Otherwise, if the door is
+closed, the wash program is commenced.
+
+Check the high-level operation FSM again : there are many actions
+initiated when the program is started and ended.
+
+- The program is locked in until it's ended.
+
+- Pressing "START" has no effect when the wash program is already
+  running.
+
+- If the door slide switch is moved to open, it's disregarded and the
+  "OPEN" indicator stays off. The door cannot be opened while the wash
+  program is running.
 
 ### Timer countdown and ticker
 
