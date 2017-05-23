@@ -16,7 +16,7 @@ below as a state diagram.
 
 Tip: treat this as a requirement rather than implementation design.
 
-[High level operation](operation.svg)
+![High level operation](operation.svg)
 
 Narrative:
 
