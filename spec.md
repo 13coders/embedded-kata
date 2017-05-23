@@ -5,7 +5,30 @@ title: The Kata
 
 ## The Kata
 
+This is your challenge : to implement in firmware the code to run the
+washing machine.
+
 ## High-level operation
+
+There's a high-level flow involved in operating the washing machine
+that's independent of the wash program that's selected. This is shown
+below as a state diagram.
+
+Tip: treat this as a requirement rather than implementation design.
+
+[High level operation](operation.svg)
+
+Narrative:
+
+- The physical door switch has to be taken as an absolute. So, for
+  example, if the switch is found to be open when the "Unloading"
+  state is entered, the "open door" event is taken to happen
+  immediately.
+
+- Don't take "enable" and "disable" to imply that hardware is
+  initialised or uninitialised. The spec is agnostic about
+  implementation : this could mean that the event is simply ignored in
+  this state.
 
 ## Handling the door
 
