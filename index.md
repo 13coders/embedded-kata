@@ -9,6 +9,14 @@ Hi. Welcome to the "Washing Machine" kata. This is a code kata for
 embedded systems developers. Unlike most code katas, this one also has
 hardware. As ever, embedded is a little unusual :)
 
+## Where To Start
+
+If you're unfamiliar with TDD and the idea of deliberate practice,
+we'd recommend starting with
+
+If you're a TDD-ist already
+
+
 ## Free Forever
 
 The Washing Machine is a Free Hardware design, released under the GNU
