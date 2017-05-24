@@ -6,14 +6,15 @@ title: The Kata
 ## The Kata
 
 This is your challenge : to implement in firmware the code to run the
-washing machine.
+washing machine as described in this spec.
 
 ## High-level operation
 
 There's a high-level flow involved in operating the washing machine
 that's independent of the wash program that's selected. This is shown
 below as a state diagram (tip: treat this as a requirement rather than
-implementation design).
+implementation design) (and another tip: if you open this picture in a
+new tab or window, you can zoom it for clarity).
 
 ![High level operation](operation.svg)
 
@@ -45,7 +46,7 @@ door switch.
 
 A straightforward function - the operator can press the up and down
 buttons to cycle between selected programs. The current program is
-always shown on the left-hand two digits as "Px". The "P" never
+always shown on the left-hand two digits as "P<n>". The "P" never
 changes.
 
 - The available programs are clamped to the range 1-3. Pressing UP
@@ -79,11 +80,19 @@ initiated when the program is started and ended.
 
 ### Filling
 
+The clock countdown does
+
 ### Operating valves
 
 #### The powder valve
 
+In a wash phase, the powder valve is opened for the duration of the
+fill.
+
 #### The softener valve
+
+In a soften phase, the softener valve is opened for the duration of
+the fill.
 
 ### Draining
 
