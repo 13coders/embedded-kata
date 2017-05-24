@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Background
 
 We tend to learn and to first experience TDD on code other than our

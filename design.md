@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Design Goals
 ---
 
 ## Design goals

@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Assembling the hardware
 ---
 
 ## Sourcing the hardware
